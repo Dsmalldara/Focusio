@@ -13,8 +13,8 @@ function Footer() {
     </div>
     </div>
     <div>
-      <ul className='md:gap-5 gap3 flex flex-col  text-white font-normal'>
-        <li>Support</li>
+      <ul className='md:gap-5 gap3 flex flex-col    text-slate-400 font-semibold'>
+        <li className='text-white'>Support</li>
         <li>Help center</li>
         <li>Account information</li>
         <li>About</li> 
@@ -22,8 +22,8 @@ function Footer() {
       </ul> 
     </div>
     <div>
-    <ul className='md:gap-5 gap-3 flex flex-col  text-white font-normal'>
-        <li>Help and solution</li>
+    <ul className='md:gap-5 gap-3 flex flex-col  text-slate-400 font-semibold'>
+        <li className='text-white'>Help and solution</li>
         <li>Talk to support</li>
         <li>Support docs</li>
         <li>System status</li> 
@@ -31,8 +31,8 @@ function Footer() {
       </ul> 
     </div>
     <div>
-    <ul className='md:gap-5 gap-3 flex flex-col text-white font-normal'>
-        <li>Product</li>
+    <ul className='md:gap-5 gap-3 flex flex-col   text-slate-400 font-semibold'>
+        <li className='text-white '>Product</li>
         <li>Update</li>
         <li>Security</li>
         <li>Beta test</li> 
@@ -41,8 +41,8 @@ function Footer() {
     </div>
     </div>
     <div className="items-start justify-start flex ">
-      <p className=" font-normal text-white  mt-5 md:mt-[2rem]">
-      © 2022 Biccas Inc. Copyright and rights reserved
+      <p className="  text-sm md:text-[1rem] text-slate-200  mt-5 md:mt-[2rem] font-semibold">
+      © 2024 Biccas Inc. Copyright and rights reserved
       </p>
     </div>
       </div>

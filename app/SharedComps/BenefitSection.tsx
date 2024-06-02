@@ -1,7 +1,7 @@
 import React from 'react'
   const benefits_subitems = [
     {
-      name:"Free Consulting With Experts about Saving Money",
+      name:"Free Consulting With Experts",
     },{
         name:"Online Banking"
     },
@@ -17,7 +17,7 @@ import React from 'react'
   ]
 function BenefitSection() {
   return (
-    <div className='grid grid-rows md:grid-cols-2 gap-5 grid-rows-[auto_auto_auto_auto]'>
+    <div className='grid grid-rows md:grid-cols-2 gap-5 grid-rows-[auto_auto_auto_auto] md:px-0 px-3'>
     <div className='grid grid-rows-subgrid md:text-start mx-auto'>
         <h1 className='text-3xl font-bold'>
         What Benefit Will You Get

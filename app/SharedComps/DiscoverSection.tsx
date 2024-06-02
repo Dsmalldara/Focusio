@@ -60,7 +60,7 @@ function DiscoverSection() {
     <div className='flex gap-4 md:gap-6  flex-wrap mt-[2.5rem] '>
         {
             images.map((image, i) =>(
-                <img src={image.image} alt={image.image}  key={i} className='object-contain '/>
+                <img src={image.image} alt={image.image}  key={i} className='w-[6rem] md:w-[8rem] mx-auto object-contain '/>
             ))
         }
     </div>
@@ -96,8 +96,8 @@ function DiscoverSection() {
                     <div  key={i} className='flex flex-row gap-3'>
                         <img src={product.image} alt={product.name}  className={clsx(product.extendedClassName ? product.extendedClassName :'w-[4rem] h-[3rem]')}/>
                      <span>
-                        <p className='text-2xl font-[600] '>     {product.name}</p>
-                        <p className='text-xl font-[300] '>{product.content}</p>
+                        <p className='md:text-2xl text-xl font-[600] '>     {product.name}</p>
+                        <p className=' text-sm md:text-xl font-[300] '>{product.content}</p>
                     </span>
                          </div>
                 )

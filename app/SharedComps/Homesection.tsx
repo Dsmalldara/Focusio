@@ -11,7 +11,7 @@ function Homesection() {
         <h3 className="flex font-inter font-[700] md:leading-[60px] leading-12 text-[40px] md:text-[60px]">
           We are here to increase your productivity
         </h3>
-        <div className="">
+        <div className="mt-[-1rem]">
           <img src="/vector1.png" alt="credit image"  className="md:w-[20rem] w-[12rem] pt-2 md:pt-5"/>
         </div>
           <p className="text-[18px] leading-[20px] pt-5 md:w-[80%] md:px-2 px-4 md:mr-auto">
