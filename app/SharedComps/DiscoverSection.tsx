@@ -1,55 +1,8 @@
 import clsx from 'clsx'
 import React from 'react'
+import { images, productDetails, ratings } from '../utils/utils'
+import Collabchildren from './Collabchildren'
 
-const  images = [
-    {
-        image:"/unsplash.png"
-    },
-    {
-        image:"/Notion.png"
-    },
-    {
-        image:"/Intercom.png"
-    },
-    {
-        image:"/Descript.png"
-    },{
-        image:"/Grammarly.png"
-    }
-]
-const productDetails = [
-    {
-        name:"Publishing",
-        content:"Plan, collaborate, and publishing your contetn that drivees meaningful engagement and growth for your brand",
-        image:"/publishing-icon.png",
-    },
-    {
-        name:"Analytics",
-        content:"Analyze your performance and create goegeous report",
-        image:"/analytics-icon.png",
-    },{
-        name:"Engagement",
-        content:"Quickly navigate and engage wih your existing and new audience",
-        image:"/engagement-icon.png",
-        extendedClassName:"w-[2rem] h-[2rem]"
-
-    }
-]
-const ratings = [
-    {
-        rating: "/rating1.png",
-        score:4.9,
-        Tscore:5,
-        text:"databricks"
-    },
-        {
-            rating: "/rating2.png",
-            score:4.8,
-            Tscore:5,
-            text:"Chain-analysis"
-        },
-    
-]
 function DiscoverSection() {
   return (
     <section className= " mt-[1rem] md:mt-[3rem]  md:px-0 px-6 ">
@@ -57,13 +10,16 @@ function DiscoverSection() {
     <p className="text-[40px] font-[700] leading-[46px] items-center justify-center flex ">
     More than 25,000 teams use Collabs
     </p>
-    <div className='flex gap-4 md:gap-6  flex-wrap mt-[2.5rem] '>
+    <Collabchildren>
+    <div className='partners flex gap-4 md:gap-6  flex-wrap mt-[2.5rem] '>
         {
             images.map((image, i) =>(
-                <img src={image.image} alt={image.image}  key={i} className='w-[6rem] md:w-[8rem] mx-auto object-contain '/>
+                <img src={image.image} alt={image.image}  key={i} className='w-[6rem] md:w-[8rem] mx-auto  '/>
             ))
         }
     </div>
+    </Collabchildren>
+
     <div className="grid md:grid-rows grid-rows-[auto_auto] bg-[#fffff] md:grid-cols-2 mt-5 md:mt-[4rem] gap-8">
         <div className='gap-[3.5rem] mt-12'>
             <h3 className='text-[40px] font-[700] leading-[46px]'>

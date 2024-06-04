@@ -1,27 +1,9 @@
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import React from 'react'
+import {imagess } from '../utils/utils'
 
-  const images =[
-    {
-      image:"/Features-analytics.png",
-      alt:"analytics features",
-      text:"Collaboration Teams",
-      content:"Here you can handle projects together with team virtually"
-    },
-    {
-      image:"/Features-cloud.png",
-      alt:"cloud features",
-      text:"Cloud Storage",
-      content:"No need to worry about storage because we provide storage up to 2 TB"
-    },
-    {
-      image:"/Features-collaboration.png",
-      alt:"feature collaboration",
-      text:"Daily Analytics",
-      content:"We always provide useful information to make it easier for you every day"
-    },
-  ]
+
 function FeaturesSection() {
   return (
    <section>
@@ -40,7 +22,7 @@ function FeaturesSection() {
       </div>
         <div className="grid grid-rows-[auto_auto_auto_auto]   md:grid-cols-3 gap-8 mt-[5rem] ">
           {
-            images.map((img,i)=>{
+            imagess.map((img,i)=>{
               return(
                 <div key={i} className='grid'>
                   <img src={img.image} alt={img.alt} className='h-[25rem] w-[20rem] mx-auto'/>

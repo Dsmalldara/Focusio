@@ -8,7 +8,7 @@ function Footer() {
        <h2 className=" font-inter font-[600] text-[40px] leading-[30px]  text-[#54BD95] ">Focusio</h2>
       <p className=' text-white font-normal'>Get started and  try our product</p>
    <div className="md:w-[16rem] relative">
-   <Input type="email" placeholder="Enter your email here" className='  rounded-3xl placeholder:text-sm md:px-5 md:w-[16rem] border border-slate-600 outline outline-green-200 focus:border  focus:border-green-300 '/>
+   <Input type="email" placeholder="Enter your email here" className='  md:rounded-3xl rounded-xl placeholder:text-sm md:px-5 px-2 md:w-[16rem] border border-slate-600 outline outline-green-200 focus:border  focus:border-green-300 '/>
     <img src="/arrow.png" alt="arrow" className='w-[2.5rem] h-[2.5rem] absolute right-0 bottom-0' />
     </div>
     </div>

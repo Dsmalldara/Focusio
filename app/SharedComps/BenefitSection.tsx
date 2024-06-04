@@ -1,20 +1,7 @@
 import React from 'react'
-  const benefits_subitems = [
-    {
-      name:"Free Consulting With Experts",
-    },{
-        name:"Online Banking"
-    },
-    {
-        name:"Investment Report Every Month"
-    },
-    {
-        name:"Saving Money For The Future"
-    },
-    {
-        name:"Online Transaction"
-    }
-  ]
+import { benefits_subitems } from '../utils/utils'
+import BenefitBulletChildren from './BenefitBulletChildren'
+
 function BenefitSection() {
   return (
     <div className='grid grid-rows md:grid-cols-2 gap-5 grid-rows-[auto_auto_auto_auto] md:px-0 px-3'>
@@ -22,18 +9,7 @@ function BenefitSection() {
         <h1 className='text-3xl font-bold'>
         What Benefit Will You Get
         </h1>
-        <div className="mt-[5rem] flex gap-5 flex-col">
-           {
-            benefits_subitems.map((item,i)=>{
-                return(
-                    <div key={i} className='flex flex-row gap-3'>
-                        <img src="/mark.png" alt="mark" />
-                        <p className='font-bold text-slate-600'>{item.name}</p>
-                        </div>
-                )
-            })
-           }
-        </div>
+       <BenefitBulletChildren />
     </div>
     <div className='grid grid-rows-subgrid'>
     <img src="/benefits.png" alt="benefits"/>
